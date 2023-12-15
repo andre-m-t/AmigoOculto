@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/stylesheet.css">
+    <script src="Script/scripdoc.js" ></script>
+    <link rel="icon" href="Imagens/christmas-tree-part-2-svgrepo-com.svg">
+    <title>Amigo Oculto - Online</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Amigo Oculto - Família Moreira</h1>
+        <h5>Entrega dos presentes em 25/12/2023</h5>
+    </div>
+    <div class="container">
+        <input id="pessoa-logada" type="text" placeholder="Insira seu nome exatamente igual ao da tabela">
+        <button id="sortear-button" onclick="sortearAmigo()">Sortear Amigo</button>
+    </div>
+    <div class="container">
+        <div class="tabela-container">
+            <table id="tabela">
+                <thead id="topo-tabela">
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Situação</th>
+                        <th>Telefone</th>
+                    </tr>
+                </thead>
+                <tbody id="corpo-tabela">
+                    <tr id="pessoa1">
+                        <td>1</td>
+                        <td>André</td>
+                        <td>OK</td>
+                        <td>34996509521</td>
+                    </tr>
+                    <tr id="pessoa2">
+                        <td>2</td>
+                        <td>Daniel</td>
+                        <td>PENDENTE</td>
+                        <td>3498856133</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="container">
+        <input id="novo-participante" type="text" placeholder="Adicionar participante">
+        <input id="telefone-participante" type="text" placeholder="Telefone">
+        <button id="adicionar-button" onclick="adicionarParticipante()">Adicionar</button>
+    </div>
+    
+</body>
+</html>
